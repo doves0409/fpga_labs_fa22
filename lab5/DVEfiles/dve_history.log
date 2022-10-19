@@ -1,0 +1,73 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab4/sim/fsm_tb.vpd -design V1} {gui_open_db -file sim/fsm_tb.vpd} {gui_open_db -file sim/sq_wave_gen_tb.vpd} {gui_open_db -file /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab4/sim/sq_wave_gen_tb.vpd -design V1} {gui_open_db -file sim/counter_tb.vpd}}
+gui_set_state_value -category Layout -key child_console_size_x -value 1177
+gui_set_state_value -category Layout -key child_console_size_y -value 176
+gui_set_state_value -category Layout -key child_data_size_x -value 171
+gui_set_state_value -category Layout -key child_data_size_y -value 337
+gui_set_state_value -category Layout -key child_driver_size_x -value 930
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 171
+gui_set_state_value -category Layout -key child_hier_size_y -value 337
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 838
+gui_set_state_value -category Layout -key child_source_size_y -value 332
+gui_set_state_value -category Layout -key child_wave_colname -value 181
+gui_set_state_value -category Layout -key child_wave_colvalue -value 182
+gui_set_state_value -category Layout -key child_wave_left -value 367
+gui_set_state_value -category Layout -key child_wave_right -value 895
+gui_set_state_value -category Layout -key main_pos_x -value 477
+gui_set_state_value -category Layout -key main_pos_y -value 931
+gui_set_state_value -category Layout -key main_size_x -value 1649
+gui_set_state_value -category Layout -key main_size_y -value 1534
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_showstate -value normal
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1272
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 817
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 1923
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 55
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 3198
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 998
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file sim/fifo_tb.vpd
+gui_list_expand -id  Hier.1   fifo_tb
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Hier.1 { fifo_tb } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { fifo_tb.empty   }
+gui_list_select -id Wave.1 -selected  { {fifo_tb.dout[31:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_list_select -id Wave.1 -selected  { {fifo_tb.din[31:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_wv_zoom_timerange -id  Wave.1 0 152749
+gui_wv_zoom_timerange -id  Wave.1 0 153272
+gui_wv_zoom_timerange -id  Wave.1 0 156585
+gui_wv_zoom_timerange -id  Wave.1 0 159724
+gui_wv_zoom_timerange -id  Wave.1 0 161990
+gui_wv_zoom_timerange -id  Wave.1 0 162688
+gui_wv_zoom_timerange -id  Wave.1 0 163037
+gui_wv_zoom_timerange -id  Wave.1 0 164257
+gui_wv_zoom_timerange -id  Wave.1 0 168791
+gui_wv_zoom_timerange -id  Wave.1 0 172453
+gui_wv_zoom_timerange -id  Wave.1 0 175068
+gui_wv_zoom_timerange -id  Wave.1 0 175417
+gui_wv_zoom_timerange -id  Wave.1 0 176114
+gui_wv_zoom_timerange -id  Wave.1 0 181171
+gui_wv_zoom_timerange -id  Wave.1 0 183438
+gui_wv_zoom_timerange -id  Wave.1 0 184484
+gui_wv_zoom_timerange -id  Wave.1 0 185182
+gui_wv_zoom_timerange -id  Wave.1 0 185356
+gui_marker_move -id  Wave.1 C1 23191
