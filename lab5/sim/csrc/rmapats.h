@@ -2443,14 +2443,23 @@ static inline U asm_bsf (U in)
 #ifdef __cplusplus
 extern "C" {
 #endif
-void  hs_0_M_0_21__uart2uart_tb_tb_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_0_0__uart2uart_tb_tb_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_0_1__uart2uart_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
-void  hs_0_M_0_2__uart2uart_tb_tb_daidir (UB  * pcode);
-void  hs_0_M_1_21__uart2uart_tb_tb_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_1_0__uart2uart_tb_tb_daidir (UB  * pcode, scalar  val);
-void  hs_0_M_1_1__uart2uart_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
-void  hs_0_M_1_2__uart2uart_tb_tb_daidir (UB  * pcode);
+void  hs_0_M_3_0__system_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_4_21__system_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_4_0__system_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_4_1__system_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
+void  hs_0_M_4_2__system_tb_tb_daidir (UB  * pcode);
+void  hs_0_M_5_21__system_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_5_0__system_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_5_1__system_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
+void  hs_0_M_5_2__system_tb_tb_daidir (UB  * pcode);
+void  hs_0_M_6_21__system_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_6_0__system_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_6_1__system_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
+void  hs_0_M_6_2__system_tb_tb_daidir (UB  * pcode);
+void  hs_0_M_7_21__system_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_7_0__system_tb_tb_daidir (UB  * pcode, scalar  val);
+void  hs_0_M_7_1__system_tb_tb_daidir (UB  * pcode, scalar  val, U  I681, scalar  * I1312, U  did);
+void  hs_0_M_7_2__system_tb_tb_daidir (UB  * pcode);
 void  hsG_0__0 (struct dummyq_struct * I1297, EBLK  * I1292, U  I689);
 #ifdef __cplusplus
 }

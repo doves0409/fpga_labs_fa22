@@ -13,7 +13,7 @@ module fsm_tb();
     wire [3:0] leds;
     wire [1:0] leds_state;
 
-    fsm #(.CYCLES_PER_SECOND(125_000_000)) DUT (
+    fsm #(.CYCLES_PER_SECOND(5)) DUT (
         .clk(clk),
         .rst(rst),
         .buttons(buttons),
@@ -40,6 +40,12 @@ module fsm_tb();
         // TODO: toggle the buttons
         // verify state transitions with the LEDs
         // verify fcw is being set properly by the FSM
+        buttons = 3'd0;
+        repeat (5) @(posedge clk);
+         #1;
+        buttons = 3'd0;
+        repeat (5) @(posedge clk);
+         #1;
 
         `ifndef IVERILOG
             $vcdplusoff;

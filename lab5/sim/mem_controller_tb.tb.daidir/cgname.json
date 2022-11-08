@@ -1,0 +1,20 @@
+{
+    "mem_controller_tb": [
+        "mem_controller_tb",
+        "x2Zmq",
+        "module",
+        2
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
+    ]
+}

@@ -1,0 +1,569 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:07 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 29942
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Aug 31 08:09:13 PDT 2022
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: CentOS Linux release 7.9.2009 (Core)
+OS Version: 5.4.206-200.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 1
+Screen size: 1280x1024
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/share/instsww/xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2
+Java executable: 	/share/instsww/xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	eecs151-adj
+User home directory: /home/cc/eecs151/fa22/class/eecs151-adj
+User working directory: /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /share/instsww/xilinx/Vivado
+HDI_APPROOT: /share/instsww/xilinx/Vivado/2021.1
+RDI_DATADIR: /share/instsww/xilinx/Vivado/2021.1/data
+RDI_BINDIR: /share/instsww/xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: /home/cc/eecs151/fa22/class/eecs151-adj/.Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: /home/cc/eecs151/fa22/class/eecs151-adj/.Xilinx/Vivado/2021.1/
+Vivado layouts directory: /home/cc/eecs151/fa22/class/eecs151-adj/.Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	/share/instsww/xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/vivado.log
+Vivado journal file: 	/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-29942-c111-3.eecs.berkeley.edu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /share/instsww/xilinx/Vivado/2021.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@license-srv.eecs.berkeley.edu
+XILINX_DSP: /share/instsww/xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: /share/instsww/xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /share/instsww/xilinx/Vivado/2021.1
+XILINX_VITIS: 
+XILINX_VIVADO: /share/instsww/xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: /share/instsww/xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	370 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,763 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,652 MB. GUI used memory: 67 MB. Current time: 8/31/22, 8:09:14 AM PDT
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ak
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Elapsed time: 11 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_CHECKPOINT, "Open..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+// Run Command: PAResourceCommand.PACommandNames_OPEN_CHECKPOINT
+// Elapsed time: 60 seconds
+setFileChooser("/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top.dcp");
+// bz (cs):  Open Checkpoint : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top.dcp 
+// Tcl Message: Command: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top.dcp  Starting open_checkpoint Task  Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7536.734 ; gain = 0.000 ; free physical = 4121 ; free virtual = 13229 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 120 MB (+123047kb) [00:01:35]
+// [Engine Memory]: 1,671 MB (+1601112kb) [00:01:35]
+// WARNING: HEventQueue.dispatchEvent() is taking  1891 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/share/instsww/xilinx/Vivado/2021.1/data/ip'. 
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: PLACEDB_MODIFIY_PRE
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,705 MB. GUI used memory: 71 MB. Current time: 8/31/22, 8:10:46 AM PDT
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /share/instsww/xilinx/Vivado/2021.1/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 1.3s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.5s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,835 MB (+83471kb) [00:01:49]
+// [GUI Memory]: 132 MB (+6724kb) [00:01:50]
+// Device: addNotify
+// DeviceView Instantiated
+// [GUI Memory]: 152 MB (+13495kb) [00:01:50]
+// WARNING: HEventQueue.dispatchEvent() is taking  2778 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z020clg400-1 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7559.918 ; gain = 0.000 ; free physical = 3745 ; free virtual = 12842 
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2020.2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Constraints 18-5435] Cannot read file, the software version for the checkpoint (2020.2.3064766) does not match the current software version (2021.1.3247384).   File : /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top/z1top.xbdc. 
+// Tcl Message: Parsing XDC File [/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top/z1top.xdc] Finished Parsing XDC File [/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top/z1top.xdc] Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7559.918 ; gain = 0.000 ; free physical = 3656 ; free virtual = 12753 
+// Tcl Message: Restored from archive | CPU: 0.040000 secs | Memory: 0.040352 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7559.918 ; gain = 0.000 ; free physical = 3656 ; free virtual = 12753 
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7576.762 ; gain = 0.000 ; free physical = 3357 ; free virtual = 12452 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: PROJECT_DASHBOARD_GADGET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Device view-level: 0.0
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DESIGN_MODE_CHANGE
+// Tcl Message: INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766 
+// Tcl Message: open_checkpoint: Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 7712.121 ; gain = 175.387 ; free physical = 3222 ; free virtual = 12323 
+// Project name: project_z1top; location: /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth; part: xc7z020clg400-1
+// 'd' command handler elapsed time: 80 seconds
+// Elapsed time: 20 seconds
+dismissDialog("Open Checkpoint"); // bz
+// RouteApi::initDelayMediator elapsed time: 6.2s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Elapsed time: 504 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top]", 0, true); // bC - Node
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12)]", 1); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF]", 3); // bC
+// PAPropertyPanels.initPanels (BUTTONS_IBUF[0]) elapsed time: 0.6s
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF, BUTTONS_IBUF[0]]", 4, false); // bC
+// HMemoryUtils.trashcanNow. Engine heap size: 1,865 MB. GUI used memory: 105 MB. Current time: 8/31/22, 8:19:34 AM PDT
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES_IBUF]", 8); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), LEDS]", 5); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF, BUTTONS_IBUF[0]]", 4, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF, BUTTONS_IBUF[0]]", 4, false, false, false, false, false, true); // bC - Double Click
+// Elapsed time: 25 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ak
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, -189675, 100368); // E
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF, BUTTONS_IBUF[0]]", 4, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SCHEMATIC, "Schematic"); // an
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// PAPropertyPanels.initPanels (O) elapsed time: 0.2s
+// Elapsed time: 15 seconds
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 134, 196, 819, 474, false, false, false, true, false); // f - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ak
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ak
+selectMenuItem(PAResourceQtoS.SchMenuAndMouse_TO_LEAF_CELLS, "To Leaf Cells"); // an
+selectView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic", 121, 196, 819, 474, false, false, false, true, false); // f - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceItoN.InstanceMenu_FLOORPLANNING, "Floorplanning"); // ak
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ak
+selectMenu(PAResourceQtoS.SchMenuAndMouse_EXPAND_CONE, "Expand Cone"); // ak
+// [GUI Memory]: 160 MB (+704kb) [00:15:29]
+// Elapsed time: 214 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top]", 0, true); // bC - Node
+selectButton(RDIResource.HTree_COLLAPSE_ALL, "Netlist_collapse_all"); // d
+// Elapsed time: 38 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12)]", 1); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10)]", 9); // bC
+// Elapsed time: 21 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ak
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // ak
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_CHECKPOINT, "Open..."); // an
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // af
+// Run Command: PAResourceCommand.PACommandNames_OPEN_CHECKPOINT
+// Elapsed time: 18 seconds
+setFileChooser("/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/impl/z1top_routed.dcp");
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,872 MB. GUI used memory: 100 MB. Current time: 8/31/22, 8:26:05 AM PDT
+// Engine heap size: 1,873 MB. GUI used memory: 124 MB. Current time: 8/31/22, 8:26:05 AM PDT
+// TclEventType: DESIGN_CLOSE
+// bz (cs):  Open Checkpoint : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: close_project 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/impl/z1top_routed.dcp 
+// Tcl Message: Command: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/impl/z1top_routed.dcp  Starting open_checkpoint Task  Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7733.520 ; gain = 0.000 ; free physical = 3320 ; free virtual = 12341 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1113 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/share/instsww/xilinx/Vivado/2021.1/data/ip'. 
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,934 MB. GUI used memory: 77 MB. Current time: 8/31/22, 8:26:08 AM PDT
+// [Engine Memory]: 1,934 MB (+8506kb) [00:17:08]
+// Xgd.load filename: /share/instsww/xilinx/Vivado/2021.1/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.5s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 0.5s
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1402 ms.
+// TclEventType: CURR_DESIGN_SET
+// TclEventType: PROJ_DESIGN_MODE_SET
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7733.527 ; gain = 0.000 ; free physical = 3307 ; free virtual = 12326 
+// Tcl Message: INFO: [Project 1-479] Netlist was created with Vivado 2021.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are: 
+// Tcl Message:   general.maxThreads 
+// Tcl Message: INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7775.492 ; gain = 0.000 ; free physical = 3191 ; free virtual = 12211 
+// Tcl Message: Restored from archive | CPU: 0.020000 secs | Memory: 0.028259 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7775.492 ; gain = 0.000 ; free physical = 3191 ; free virtual = 12211 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7775.492 ; gain = 0.000 ; free physical = 3191 ; free virtual = 12211 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: PROJECT_DASHBOARD_GADGET_DELETE
+// TclEventType: PROJ_DESIGN_MODE_SET
+// TclEventType: DESIGN_MODE_CHANGE
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Device view-level: 0.0
+// Tcl Message: INFO: [Project 1-604] Checkpoint was created with Vivado v2021.1 (64-bit) build 3247384 
+// Tcl Message: open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 7907.316 ; gain = 173.797 ; free physical = 3147 ; free virtual = 12167 
+// Project name: project_z1top_routed; location: /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/impl; part: xc7z020clg400-1
+// 'd' command handler elapsed time: 29 seconds
+dismissDialog("Open Checkpoint"); // bz
+// Elapsed time: 43 seconds
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // x: TRUE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 1.1
+// Device view-level: 0.0
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // x: FALSE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // x: TRUE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 1.1
+// Device view-level: 0.0
+// HMemoryUtils.trashcanNow. Engine heap size: 1,998 MB. GUI used memory: 111 MB. Current time: 8/31/22, 8:27:05 AM PDT
+// [GUI Memory]: 170 MB (+2567kb) [00:21:19]
+// Elapsed time: 195 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 1571500, 1909100); // E
+// Device select: 'Tile - INT_R_X19Y83'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 307, 196, 819, 474); // U
+// PAPropertyPanels.initPanels (Tile: INT_R_X19Y83) elapsed time: 0.2s
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 2642934, 3905863); // E
+// Device select: 'Tile - INT_R_X37Y6'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 417, 401, 819, 474); // U
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 402663, 3974045); // E
+// Device select: 'Tile - INT_R_X1Y3'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 187, 408, 819, 474); // U
+// Elapsed time: 19 seconds
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // x: FALSE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+selectButton(PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES, (String) null); // x: TRUE
+// Run Command: PAResourceCommand.PACommandNames_FED_TOGGLE_ROUTING_RESOURCES
+// Device view-level: 1.1
+// Device view-level: 0.0
+// HMemoryUtils.trashcanNow. Engine heap size: 2,002 MB. GUI used memory: 112 MB. Current time: 8/31/22, 8:30:50 AM PDT
+// Elapsed time: 398 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12)]", 1); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10)]", 9); // bC
+// Elapsed time: 25 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS]", 2); // bC
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF]", 4); // bC
+// PAPropertyPanels.initPanels (BUTTONS[0]) elapsed time: 0.4s
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS, BUTTONS[0]]", 3, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 1"); // an
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS, BUTTONS[0]]", 3, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS, BUTTONS[0]]", 3, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS, BUTTONS[0]]", 3, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 2"); // an
+// HMemoryUtils.trashcanNow. Engine heap size: 2,017 MB. GUI used memory: 131 MB. Current time: 8/31/22, 8:38:27 AM PDT
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS, BUTTONS[0]]", 3, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 8"); // an
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 0.4
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.0
+// Elapsed time: 75 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF, BUTTONS_IBUF[0]]", 5, false); // bC
+// HMemoryUtils.trashcanNow. Engine heap size: 2,018 MB. GUI used memory: 114 MB. Current time: 8/31/22, 8:40:05 AM PDT
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF, BUTTONS_IBUF[0]]", 5, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 20"); // an
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), LEDS]", 6); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), LEDS, LEDS[0]]", 7, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), LEDS, LEDS[0]]", 7, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 11"); // an
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS, BUTTONS[0]]", 3, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 5"); // an
+// HMemoryUtils.trashcanNow. Engine heap size: 2,020 MB. GUI used memory: 154 MB. Current time: 8/31/22, 8:40:35 AM PDT
+// Elapsed time: 31 seconds
+expandTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES]", 14); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 17"); // an
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 11"); // an
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false, false, false, false, true, false); // bC - Popup Trigger
+// HMemoryUtils.trashcanNow. Engine heap size: 2,021 MB. GUI used memory: 115 MB. Current time: 8/31/22, 8:41:30 AM PDT
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 14"); // an
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "Device_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Device view-level: 0.4
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 2329015, 1922087); // E
+// Device view-level: 0.9
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.5
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "Device_zoom_out"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Device view-level: 0.1
+// HMemoryUtils.trashcanNow. Engine heap size: 2,023 MB. GUI used memory: 115 MB. Current time: 8/31/22, 8:41:52 AM PDT
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false, false, false, false, true, false); // bC - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_MARK, "Mark"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ak
+selectMenuItem((HResource) null, "Color 7"); // an
+// HMemoryUtils.trashcanNow. Engine heap size: 2,023 MB. GUI used memory: 115 MB. Current time: 8/31/22, 8:42:16 AM PDT
+// PAPropertyPanels.initPanels (LEDS_OBUF[0]_inst_i_1 (LUT2)) elapsed time: 0.2s
+// Elapsed time: 125 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[0]_inst_i_1 (LUT2)]", 22, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[0]_inst (OBUF)]", 21, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[1]_inst (OBUF)]", 23, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[0]_inst_i_1 (LUT2)]", 22, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[0]_inst (OBUF)]", 21, false); // bC
+// HMemoryUtils.trashcanNow. Engine heap size: 2,024 MB. GUI used memory: 117 MB. Current time: 8/31/22, 8:44:22 AM PDT
+// Elapsed time: 17 seconds
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 4713236, 543509); // E
+// Device select: 'Tile - INT_L_X72Y136'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 647, 62, 819, 474); // U
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 4581742, 596107); // E
+// Device select: 'Tile - INT_R_X71Y134'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 632, 68, 819, 474); // U
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 4853496, 376950); // E
+// Device select: 'Tile - RIOB33_X73Y141'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 663, 43, 819, 474); // U
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 4800898, 368184); // E
+// Device select: 'Tile - R_TERM_INT_X184Y149'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 657, 42, 819, 474); // U
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 4748301, 1770787); // E
+// Device select: 'Tile - INT_R_X73Y88'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 651, 202, 819, 474); // U
+// HMemoryUtils.trashcanNow. Engine heap size: 2,024 MB. GUI used memory: 117 MB. Current time: 8/31/22, 8:44:52 AM PDT
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 4888561, 1814619); // E
+// Device select: 'I/O Bank - I/O Bank 34'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 667, 207, 819, 474); // U
+// PAPropertyPanels.initPanels (I/O Bank 34) elapsed time: 0.2s
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), BUTTONS_IBUF[0]_inst (IBUF)]", 19, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[0]_inst (OBUF)]", 21, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[0]_inst (OBUF)]", 21, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), GND (GND)]", 20, false); // bC
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 119 MB. Current time: 8/31/22, 8:45:06 AM PDT
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[0]_inst (OBUF)]", 21, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[1]_inst (OBUF)]", 23, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[1]_inst (OBUF)]", 23, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[0]_inst_i_1 (LUT2)]", 22, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[0]_inst (OBUF)]", 21, false); // bC
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 119 MB. Current time: 8/31/22, 8:45:12 AM PDT
+// Elapsed time: 68 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false, false, false, false, false, true); // bC - Double Click
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), SWITCHES, SWITCHES[0]]", 15, false, false, false, false, false, true); // bC - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 118 MB. Current time: 8/31/22, 8:46:28 AM PDT
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF, BUTTONS_IBUF[0]]", 5, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Nets (12), BUTTONS_IBUF, BUTTONS_IBUF[0]]", 5, false, false, false, false, false, true); // bC - Double Click
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), SWITCHES_IBUF[0]_inst (IBUF)]", 28, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[5]_inst (OBUF)]", 27, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[5]_inst (OBUF)]", 27, false); // bC
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 118 MB. Current time: 8/31/22, 8:46:48 AM PDT
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[4]_inst (OBUF)]", 26, false); // bC
+selectTree(PAResourceItoN.NetlistTreeView_NETLIST_TREE, "[z1top, Leaf Cells (10), LEDS_OBUF[3]_inst (OBUF)]", 25, false); // bC
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 2609330, 1306175); // E
+// Device select: 'Tile - INT_L_X36Y106'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 407, 149, 819, 474); // U
+selectGraphicalView(PAResourceOtoP.PAViews_DEVICE, 2556732, 1481500); // E
+// Device select: 'Tile - BRAM_L_X36Y100'
+selectView(PAResourceOtoP.PAViews_DEVICE, "Device", 401, 169, 819, 474); // U
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 110 MB. Current time: 8/31/22, 9:16:49 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 9:46:49 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 10:16:49 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 8/31/22, 10:46:49 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 11:16:49 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 11:46:49 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 8/31/22, 12:16:49 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 8/31/22, 12:46:49 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 1:16:49 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 1:46:49 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 2:16:49 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 2:46:49 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 3:16:49 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 3:46:49 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 4:16:49 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 4:46:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 5:16:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 5:46:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 6:16:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 6:46:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 8/31/22, 7:16:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 7:46:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 8:16:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 8:46:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 9:16:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 8/31/22, 9:46:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 10:16:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 10:46:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 11:16:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 8/31/22, 11:46:50 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 12:16:50 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 12:46:50 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 1:16:50 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 1:46:50 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 2:16:50 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 2:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 3:16:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 3:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 4:16:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 4:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 5:16:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 5:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 6:16:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 6:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 7:16:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 7:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 8:16:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 8:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 9:16:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 9:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 10:16:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 10:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 11:16:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 11:46:51 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 12:16:51 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 107 MB. Current time: 9/1/22, 12:46:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 1:16:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 1:46:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 2:16:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 2:46:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 3:16:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 3:46:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 4:16:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 4:46:52 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,025 MB. GUI used memory: 108 MB. Current time: 9/1/22, 5:16:52 PM PDT

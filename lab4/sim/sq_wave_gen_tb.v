@@ -25,6 +25,7 @@ module sq_wave_gen_tb();
     integer code_file;
     integer next_sample_fetch;
     integer num_samples_fetched = 0;
+    reg [3:0] leds = 0;
     initial begin
         `ifdef IVERILOG
             $dumpfile("sq_wave_gen_tb.fst");
@@ -61,10 +62,38 @@ module sq_wave_gen_tb();
                 // TODO: play with the buttons to adjust the output frequency
                 // hint: use the num_samples_fetched integer to wait for
                 // X samples to be fetched by the sampling thread, example below
-                @(num_samples_fetched == 500);
-                $display("Fetched 500 samples at time %t", $time);
-                @(num_samples_fetched == 5000);
-                $display("Fetched 5000 samples at time %t", $time);
+                //@(num_samples_fetched == 500);
+                //$display("Fetched 500 samples at time %t", $time);
+                //@(num_samples_fetched == 5000);
+                //$display("Fetched 5000 samples at time %t", $time);
+
+                @(num_samples_fetched == 100);
+                buttons = 3'd1;
+                @(posedge clk); #1;
+                buttons = 3'd0;
+
+                @(num_samples_fetched == 150);   
+                buttons = 3'd1;
+                @(posedge clk); #1;
+
+                buttons = 3'd0;
+                @(num_samples_fetched == 200);   
+                buttons = 3'd2;
+                @(posedge clk); #1;
+
+                buttons = 3'd0;
+                //change mode to exp. period should double when we press buttons[0] now
+                @(num_samples_fetched == 250);   
+                buttons = 3'd4;
+                @(posedge clk); #1;
+                buttons = 3'd0;
+                @(posedge clk); #1;
+                buttons = 3'd1;
+                @(posedge clk); #1;  
+                buttons = 3'd0;
+
+            
+
             end
         join
 

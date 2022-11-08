@@ -1,0 +1,8 @@
+=======================DVE Context and Call Stack=========================
+
+An unexpected termination has occurred in /share/instsww/synopsys-new/vcs/P-2019.06/gui/dve/linux64/bin/dve.exeHostname c111-4.eecs.berkeley.edu
+
+Tcl="gui_close_window -window Wave.1 " 
+Command line: /share/instsww/synopsys-new/vcs/P-2019.06/gui/dve/linux64/bin/dve.exe -vpd sim/debouncer_tb.vpd
+
+--- Stack trace follows:

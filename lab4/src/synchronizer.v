@@ -10,5 +10,13 @@ module synchronizer #(parameter WIDTH = 1) (
     // that are synchronized to the input clk
 
     // Remove this line once you create your synchronizer
-    assign sync_signal = 0;
+    reg [WIDTH-1:0] mid_signal = 1'b0;
+    reg [WIDTH-1:0] out_signal = 1'b0;
+    always@(posedge clk) begin
+	mid_signal <= async_signal;
+    out_signal <= mid_signal;
+	//sync_signal <= mid_signal;
+	end
+    ///output is of wire type. Must be continuous assignment (can't do inside always block)
+   assign sync_signal = out_signal;
 endmodule

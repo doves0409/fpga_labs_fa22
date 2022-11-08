@@ -5,16 +5,16 @@
         "module",
         1
     ],
-    "...MASTER...": [
-        "SIM",
-        "amcQw",
-        "module",
-        3
-    ],
     "uart2uart_tb": [
         "uart2uart_tb",
         "rZ3my",
         "module",
         2
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        3
     ]
 }

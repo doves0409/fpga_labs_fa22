@@ -1,0 +1,90 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:07 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Aug 31 08:08:47 2022
+# Process ID: 29942
+# Current directory: /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build
+# Command line: vivado
+# Log file: /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/vivado.log
+# Journal file: /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top.dcp
+Command: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7536.734 ; gain = 0.000 ; free physical = 4121 ; free virtual = 13229
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/share/instsww/xilinx/Vivado/2021.1/data/ip'.
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7559.918 ; gain = 0.000 ; free physical = 3745 ; free virtual = 12842
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-5435] Cannot read file, the software version for the checkpoint (2020.2.3064766) does not match the current software version (2021.1.3247384).
+  File : /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top/z1top.xbdc.
+Parsing XDC File [/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top/z1top.xdc]
+Finished Parsing XDC File [/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/synth/z1top/z1top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7559.918 ; gain = 0.000 ; free physical = 3656 ; free virtual = 12753
+Restored from archive | CPU: 0.040000 secs | Memory: 0.040352 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 7559.918 ; gain = 0.000 ; free physical = 3656 ; free virtual = 12753
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7576.762 ; gain = 0.000 ; free physical = 3357 ; free virtual = 12452
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.2 (64-bit) build 3064766
+open_checkpoint: Time (s): cpu = 00:00:36 ; elapsed = 00:00:21 . Memory (MB): peak = 7712.121 ; gain = 175.387 ; free physical = 3222 ; free virtual = 12323
+close_project
+open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/impl/z1top_routed.dcp
+Command: open_checkpoint /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab1/build/impl/z1top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7733.520 ; gain = 0.000 ; free physical = 3320 ; free virtual = 12341
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/share/instsww/xilinx/Vivado/2021.1/data/ip'.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7733.527 ; gain = 0.000 ; free physical = 3307 ; free virtual = 12326
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7775.492 ; gain = 0.000 ; free physical = 3191 ; free virtual = 12211
+Restored from archive | CPU: 0.020000 secs | Memory: 0.028259 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 7775.492 ; gain = 0.000 ; free physical = 3191 ; free virtual = 12211
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7775.492 ; gain = 0.000 ; free physical = 3191 ; free virtual = 12211
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2021.1 (64-bit) build 3247384
+open_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 7907.316 ; gain = 173.797 ; free physical = 3147 ; free virtual = 12167
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'BUTTONS[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'BUTTONS[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'BUTTONS[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'BUTTONS[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'BUTTONS[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'BUTTONS[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'LEDS[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'BUTTONS[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'BUTTONS[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SWITCHES[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SWITCHES[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SWITCHES[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SWITCHES[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SWITCHES[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SWITCHES[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SWITCHES[0]'; it is not accessible from the fabric routing.
+CRITICAL WARNING: [Chipscope 16-3] Cannot debug net 'SWITCHES[0]'; it is not accessible from the fabric routing.

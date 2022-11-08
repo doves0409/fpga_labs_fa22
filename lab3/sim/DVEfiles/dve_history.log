@@ -1,0 +1,37 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab2/sim/counter_testbench.vpd -design V1} {gui_open_db -file sim/counter_testbench.vpd} {gui_open_db -file sim/adder_testbench.vpd}}
+gui_set_state_value -category Layout -key child_wave_colname -value 142
+gui_set_state_value -category Layout -key child_wave_colvalue -value 142
+gui_set_state_value -category Layout -key child_wave_left -value 288
+gui_set_state_value -category Layout -key child_wave_right -value 701
+gui_set_state_value -category Layout -key main_pos_x -value 680
+gui_set_state_value -category Layout -key main_pos_y -value 113
+gui_set_state_value -category Layout -key main_size_x -value 1862
+gui_set_state_value -category Layout -key main_size_y -value 1001
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_showstate -value normal
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 999
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 346
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 2061
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 174
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 3183
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 1017
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file sync_tb.vpd
+gui_list_select -id Data.1 -selected  { sync_tb.clk   }
+gui_list_select -id Data.1 -selected  { sync_tb.clk  sync_tb.async_signal   }
+gui_list_select -id Data.1 -selected  { sync_tb.clk  sync_tb.async_signal  sync_tb.sync_signal   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { sync_tb.clk sync_tb.async_signal sync_tb.sync_signal } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_close_window -window TopLevel.2

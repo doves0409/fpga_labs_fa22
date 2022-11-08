@@ -65,14 +65,14 @@ module nco_tb();
                 // TODO: play with the fcw to adjust the output frequency
                 // hint: use the num_samples_fetched integer to wait for
                 // X samples to be fetched by the sampling thread
-                fcw = 0; // TODO: change this to play a 440 Hz tone
+                fcw = 60508; // TODO: change this to play a 440 Hz tone
             end
             // Thread to check code for fcw = 2^16
             begin
                 // Initially the code comes from address 0 of the LUT
-                assert(code == 10'b1000000000) else $error("Code on reset should be LUT[0]");
+                assert(code == 10'b1000000000) else $error("Code on reset should be LUT[0] but was %d", code); 
                 @(num_samples_fetched == 1);
-                assert(code == 10'b1000001100) else $error("Code after 1 sample should be LUT[1]");
+                assert(code == 10'b1000001100) else $error("Code after 1 sample should be LUT[1] but was %d", code);
                 @(num_samples_fetched == 2);
                 assert(code == 10'b1000011001) else $error("Code after 2 samples should be LUT[2]");
                 @(num_samples_fetched == 10);

@@ -49,15 +49,19 @@
 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/bin/vcs1
 uart_transmitter_tb
 uart_transmitter_tb.v
-70
-XSESSION_EXEC=mate-session
-XDG_SESSION_ID=510
+72
+XDG_VTNR=1
+XDG_SESSION_TYPE=x11
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+XDG_SESSION_ID=74
+XDG_SESSION_DESKTOP=mate
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SEAT=seat0
 XDG_RUNTIME_DIR=/run/user/80425
+XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/eecs151-adj
 XDG_DATA_DIRS=/home/cc/eecs151/fa22/class/eecs151-adj/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 XDG_CURRENT_DESKTOP=MATE
-XAUTHORITY=/home/cc/eecs151/fa22/class/eecs151-adj/.Xauthority
-X2GO_SESSION=eecs151-adj-58-1665976991_stDMATE_dp32
-X2GO_AGENT_PID=21777
+XAUTHORITY=/var/run/lightdm/eecs151-adj/xauthority
 VTE_VERSION=5204
 VMR_MODE_FLAG=64
 VCS_PATH=/share/instsww/synopsys-new/vcs/P-2019.06/bin
@@ -70,24 +74,19 @@ VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/share/instsww/synopsys-new/vcs/P-2019.06/linux64
 SYNOPSYS_ROOT=/home/ff/cs250/tools/synopsys
-STARTUP=/usr/bin/env LD_LIBRARY_PATH= mate-session
-SSH_CONNECTION=136.25.178.20 65092 128.32.40.181 22
-SSH_CLIENT=136.25.178.20 65092 22
-SSH_AUTH_SOCK=/run/user/80425/keyring/ssh
+SSH_AUTH_SOCK=/home/cc/eecs151/fa22/class/eecs151-adj/.cache/keyring-S4HSU1/ssh
 SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
-SSH_AGENT_PID=22638
-SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/22497,unix/unix:/tmp/.ICE-unix/22497
+SSH_AGENT_PID=21473
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/21366,unix/unix:/tmp/.ICE-unix/21366
 SERIALTTY=/dev/ttyUSB0
 SCRNAME=vcs
 SCRIPT_NAME=vcs
 RUNAS=/share/b/runas/x86_64
 RISCV=/home/ff/eecs151/tools-151/riscv-toolchain-fa21
 QT_GRAPHICSSYSTEM_CHECKED=1
-QT_GRAPHICSSYSTEM=native
 QTLIB=/usr/lib64/qt-3.3/lib
 QTINC=/usr/lib64/qt-3.3/include
 QTDIR=/usr/lib64/qt-3.3
-PULSE_CLIENTCONFIG=/home/cc/eecs151/fa22/class/eecs151-adj/.x2go/C-eecs151-adj-58-1665976991_stDMATE_dp32/.pulse-client.conf
 OVA_UUM=0
 OS=Linux
 NNTPSERVER=news.csua.berkeley.edu
@@ -110,7 +109,10 @@ IMSETTINGS_MODULE=none
 IMSETTINGS_INTEGRATE_DESKTOP=yes
 HISTCONTROL=ignoredups
 GTK_OVERLAY_SCROLLING=0
-DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-DDMEIKwXjG,guid=f1d3001539b5d07fd02792b9634ccaab
+GNOME_KEYRING_CONTROL=/home/cc/eecs151/fa22/class/eecs151-adj/.cache/keyring-S4HSU1
+GDMSESSION=mate
+DESKTOP_SESSION=mate
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-gnFSjJ3zGz,guid=dba14a57fac4b20d11ccdaba6352b2a9
 CVS_RSH=ssh
 CONFIG_SHELL=/usr/bin/ksh
 COLORTERM=truecolor
@@ -130,9 +132,9 @@ ADS_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
 1665716502 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/synchronizer.v
 1665716435 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/piano_scale_rom.v
 1665716435 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/memory.v
-1665716435 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/mem_controller.v
+1666331343 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/mem_controller.v
 1665716435 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/fixed_length_piano.v
-1666139356 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/fifo.v
+1666364183 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/fifo.v
 1665716513 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/edge_detector.v
 1665716561 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/debouncer.v
 1665716435 /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab5/src/button_parser.v
@@ -142,5 +144,5 @@ ADS_LICENSE_FILE=27000@license-srv.eecs.berkeley.edu
 1559360051 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/liberrorinf.so
 1559360008 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libsnpsmalloc.so
 1559360050 /share/instsww/synopsys-new/vcs/P-2019.06/linux64/lib/libvfs.so
-1666139783 uart_transmitter_tb.tb.daidir
+1666367876 uart_transmitter_tb.tb.daidir
 -1 partitionlib

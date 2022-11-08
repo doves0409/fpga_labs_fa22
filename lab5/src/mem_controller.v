@@ -9,7 +9,7 @@ module mem_controller #(
 
   output rx_fifo_rd_en,
   output tx_fifo_wr_en,
-  output [FIFO_WIDTH-1:0] dout,
+  output reg [FIFO_WIDTH-1:0] dout,
   output [5:0] state_leds
 );
 
@@ -50,6 +50,8 @@ module mem_controller #(
   always @(posedge clk) begin
 
     /* state reg update */
+    if(rst) curr_state <= IDLE;
+    else curr_state <= next_state;
 
   end
 
@@ -63,10 +65,50 @@ module mem_controller #(
   always @(*) begin
     
     /* initial values to avoid latch synthesis */
+    next_state = curr_state; //default next state
 
     case (curr_state)
 
       /* next state logic */
+      IDLE: begin 
+        if(!rx_fifo_empty) next_state = READ_CMD;
+
+      end
+
+      READ_CMD: begin
+        if(!rx_fifo_empty) next_state = READ_ADDR;
+
+      end
+
+      READ_ADDR: begin
+        // in seq block: add addr = din
+        //read command
+        if(cmd == 8'd48) next_state = READ_MEM_VAL;
+        //write command
+        if(cmd == 8'd49 && !rx_fifo_empty) next_state = READ_DATA;
+
+      end
+
+      READ_DATA: begin
+        next_state = WRITE_MEM_VAL;
+      end
+
+      READ_MEM_VAL: begin
+		next_state = ECHO_VAL;
+      end
+
+      ECHO_VAL: begin
+		//if(!rx_fifo_empty) next_state = READ_CMD;
+		//else 
+    next_state = IDLE;
+
+      end
+
+      WRITE_MEM_VAL: begin
+		//if(!rx_fifo_empty) next_state = READ_CMD;
+		//else 
+    next_state = IDLE;
+      end
 
     endcase
 
@@ -75,28 +117,58 @@ module mem_controller #(
   always @(*) begin
     
     /* initial values to avoid latch synthesis */
-    
-    case (curr_state)
+	//if(rst) begin
+		mem_we = 0;
+		mem_addr = 0;
+		mem_din = 0;
+		dout= 0;
+	//end else begin
+  
+    	case (curr_state)
 
       /* output and mem signal logic */
+			READ_MEM_VAL: begin
+				mem_addr = addr;
+			end
+			WRITE_MEM_VAL: begin
+				mem_addr = addr;
+				mem_din = data;
+				mem_we = 1;
+			end
+			ECHO_VAL: begin 
+				if(!tx_fifo_full) dout=mem_dout;
+			end
       
-    endcase
+    	endcase
 
-  end
-
+  //end
+end
 
   always @(posedge clk) begin
 
     /* byte reading and packet counting */
+	case(curr_state)
+		READ_CMD: begin
+			cmd <= din;
+		end
+		READ_ADDR: begin
+			addr <= din;
+		end
+		READ_DATA: begin
+			data <= din;
+		end
+	endcase
+		
 
   end
 
   /* TODO: MODIFY THIS */
-  assign state_leds = 'd0;
+  //assign state_leds = 'd0;
 
   /* TODO: MODIFY/REMOVE THIS */
-  assign rx_fifo_rd_en = 'd0;
-  assign tx_fifo_wr_en = 'd0;
-  assign dout = 'd0;
+  assign rx_fifo_rd_en = (next_state == READ_CMD) || (next_state == READ_ADDR) || (next_state == READ_DATA); // || (curr_state == IDLE);
+
+  assign tx_fifo_wr_en = curr_state == ECHO_VAL;
+  //assign dout = 'd0;
 
 endmodule

@@ -45,7 +45,7 @@ module fifo #(
 			end else if(rd_en && !empty) begin
 				dout <= mem[rd_ptr];
 				rd_ptr <= rd_ptr + 1;
-				entries <= entries - 1;
+				entries <= entries - 1; 
 			end 
 		end
 	end

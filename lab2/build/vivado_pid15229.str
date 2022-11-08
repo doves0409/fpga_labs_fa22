@@ -1,0 +1,108 @@
+/*
+
+Xilinx Vivado v2021.1 (64-bit) [Major: 2021, Minor: 1]
+SW Build: 3247384 on Thu Jun 10 19:36:07 MDT 2021
+IP Build: 3246043 on Fri Jun 11 00:30:35 MDT 2021
+
+Process ID (PID): 15229
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Wed Sep 07 15:41:03 PDT 2022
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: CentOS Linux release 7.9.2009 (Core)
+OS Version: 5.4.206-200.el7.x86_64
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: 1
+Screen size: 1280x1024
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	/share/instsww/xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2
+Java executable: 	/share/instsww/xilinx/Vivado/2021.1/tps/lnx64/jre11.0.2/bin/java
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	eecs151-adj
+User home directory: /home/cc/eecs151/fa22/class/eecs151-adj
+User working directory: /home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab2/build
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /share/instsww/xilinx/Vivado
+HDI_APPROOT: /share/instsww/xilinx/Vivado/2021.1
+RDI_DATADIR: /share/instsww/xilinx/Vivado/2021.1/data
+RDI_BINDIR: /share/instsww/xilinx/Vivado/2021.1/bin
+
+Vivado preferences file: /home/cc/eecs151/fa22/class/eecs151-adj/.Xilinx/Vivado/2021.1/vivado.xml
+Vivado preferences directory: /home/cc/eecs151/fa22/class/eecs151-adj/.Xilinx/Vivado/2021.1/
+Vivado layouts directory: /home/cc/eecs151/fa22/class/eecs151-adj/.Xilinx/Vivado/2021.1/data/layouts
+PlanAhead jar file: 	/share/instsww/xilinx/Vivado/2021.1/lib/classes/planAhead.jar
+Vivado log file: 	
+Vivado journal file: 	
+Engine tmp dir: 	./.Xil/Vivado-15229-c111-3.eecs.berkeley.edu
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /share/instsww/xilinx/Vivado/2021.1/ids_lite/ISE
+XILINXD_LICENSE_FILE: 2100@license-srv.eecs.berkeley.edu
+XILINX_DSP: /share/instsww/xilinx/Vivado/2021.1/ids_lite/ISE
+XILINX_HLS: /share/instsww/xilinx/Vitis_HLS/2021.1
+XILINX_PLANAHEAD: /share/instsww/xilinx/Vivado/2021.1
+XILINX_VITIS: 
+XILINX_VIVADO: /share/instsww/xilinx/Vivado/2021.1
+XILINX_VIVADO_HLS: /share/instsww/xilinx/Vivado/2021.1
+
+
+GUI allocated memory:	308 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,790 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 77 MB (+78269kb) [00:00:06]
+// [Engine Memory]: 1,630 MB (+1557826kb) [00:00:06]
+// [GUI Memory]: 83 MB (+2119kb) [00:00:06]
+// [GUI Memory]: 87 MB (+406kb) [00:00:06]
+// Xgd.load filename: /share/instsww/xilinx/Vivado/2021.1/data/parts/xilinx/zynq/devint/zynq/xc7z020/xc7z020.xgd; ZipEntry: xc7z020_detail.xgd elapsed time: 0.9s
+// DeviceModel: Load Xgds SwingWorker Join Forever elapsed time: 1.1s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [GUI Memory]: 117 MB (+26084kb) [00:00:20]
+// [Engine Memory]: 1,764 MB (+55214kb) [00:00:20]
+// [GUI Memory]: 129 MB (+6436kb) [00:00:20]
+// [GUI Memory]: 137 MB (+1613kb) [00:00:20]
+// Schematic: addNotify
+// TclEventType: START_PROGRESS_DIALOG
+// TclEventType: STOP_PROGRESS_DIALOG
+// bz (cs):  Sourcing Tcl script '/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab2/../scripts/elaborate.tcl' : addNotify
+// TclEventType: STOP_PROGRESS_DIALOG
+dismissDialog("Sourcing Tcl script '/home/cc/eecs151/fa22/class/eecs151-adj/fpga_labs_fa22/lab2/../scripts/elaborate.tcl'"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,796 MB. GUI used memory: 95 MB. Current time: 9/7/22, 3:41:04 PM PDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 154 MB (+10858kb) [00:18:38]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,808 MB. GUI used memory: 98 MB. Current time: 9/7/22, 4:11:04 PM PDT
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,804 MB. GUI used memory: 88 MB. Current time: 9/7/22, 4:41:04 PM PDT

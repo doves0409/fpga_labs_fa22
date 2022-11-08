@@ -68,6 +68,7 @@ module z1top (
     nco nco (
         .clk(CLK_125MHZ_FPGA),
         .rst(rst),
+        //.fcw(24'd60508),
         .fcw(fcw),
         .next_sample(next_sample),
         .code(nco_code)
@@ -79,6 +80,7 @@ module z1top (
         .buttons(fsm_buttons),
         .leds(fsm_leds),
         .leds_state(LEDS[5:4]),
+        //.fcw(24'd60508)
         .fcw(fcw)
     );
 endmodule
